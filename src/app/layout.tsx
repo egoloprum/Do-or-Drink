@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${jetbrainsMono.className} antialiased h-[100vh]`}
+        className={`${jetbrainsMono.className} h-[100vh] relative`}
       >
         <div id="tileGrid" className="bg-black_extra z-0 h-full w-full absolute top-0 left-0"></div>
         {children}

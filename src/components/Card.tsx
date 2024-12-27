@@ -204,9 +204,16 @@ const Card = () => {
   }
 
   const handleResetCards = () => {
-    setChoicesSelected([])
-    setSelectedCard({ id: 0, description: "" })
-    setAllCardsSelected(false)
+    const confirmReset = window.confirm("Are you sure you want to reset all cards?");
+    
+    if (confirmReset) {
+      setChoicesSelected([]);
+      setSelectedCard({ id: 0, description: "" });
+      setAllCardsSelected(false);
+      // alert("All cards have been reset.");
+    } else {
+      // alert("Reset canceled.");
+    }
   }
 
   useEffect(() => {
