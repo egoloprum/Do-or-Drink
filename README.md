@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Do or Drink Game
 
-First, run the development server:
+Welcome to the Do or Drink game! This is a fun and interactive game designed for parties and gatherings, where players can either complete a challenge or take a drink. The game is built using React and TypeScript, and it features a collection of entertaining and sometimes daring challenges.
 
+## Table of Contents
+* Features
+* Installation
+* Usage
+* Game Rules
+* Contributing
+* License
+
+## Features
+* A collection of 41 unique challenges.
+* Randomly selects a challenge for players.
+* Keeps track of selected challenges to avoid repetition.
+* Option to reset the game and start over.
+* Responsive design for a great user experience.
+
+## Installation
+To get started with the Do or Drink game, follow these steps:
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/egoloprum/Do-or-Drink.git
+cd do-or-drink
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install the dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Start the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open your browser and navigate to http://localhost:3000 to see the game in action.
 
-## Learn More
+## Usage
+Once the game is running, you will see a button to draw a new card. Click the "New card" button to reveal a challenge. If you have completed all challenges, you will be notified that there are no more cards available. You can reset the game at any time by clicking the "Reset cards" button.
 
-To learn more about Next.js, take a look at the following resources:
+## Game Rules
+* Players take turns drawing a card.
+* Each card presents a challenge that must be completed or the player must take a drink.
+* If a player has completed all challenges, they can reset the game to play again.
+* Enjoy responsibly!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributing
+Contributions are welcome! If you have suggestions for new challenges or improvements, feel free to open an issue or submit a pull request.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Fork the repository.
+2. Create your feature branch:
 
-## Deploy on Vercel
+```bash
+git checkout -b feature/YourFeature
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. Commit your changes:
+```bash
+git commit -m 'Add some feature'
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. Push to the branch:
+```bash
+git push origin feature/YourFeature
+```
+
+5. Open a pull request.
+
+
+## Screenshots
+
+![App Screenshot](https://github.com/egoloprum/Do-or-Drink/blob/main/public/screenshot.png)
+
