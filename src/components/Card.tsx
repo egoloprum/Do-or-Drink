@@ -185,10 +185,7 @@ function getRandomNumber(min: number, max: number, choicesSelected: number[]): n
 }
 
 const Card = () => {
-  const [choicesSelected, setChoicesSelected] = useState<number[]>(() => {
-    const storedChoices = localStorage.getItem('choicesSelected')
-    return storedChoices ? JSON.parse(storedChoices) : []
-  })
+  const [choicesSelected, setChoicesSelected] = useState<number[]>([])
 
   const [selectedCard, setSelectedCard] = useState<Card>({ id: 0, description: "" })
   const [allCardsSelected, setAllCardsSelected] = useState<boolean>(false)
@@ -208,8 +205,16 @@ const Card = () => {
 
   const handleResetCards = () => {
     setChoicesSelected([])
+    setSelectedCard({ id: 0, description: "" })
     setAllCardsSelected(false)
   }
+
+  useEffect(() => {
+    const storedChoices = localStorage.getItem('choicesSelected')
+    if (storedChoices) {
+      setChoicesSelected(JSON.parse(storedChoices))
+    }
+  }, [])
 
   useEffect(() => {
     localStorage.setItem('choicesSelected', JSON.stringify(choicesSelected))
